@@ -17,7 +17,22 @@
                 str = JSON.stringify(data);
                 document.write(str);
                 strHTML = "";
-            });
+                document.innerHTML = "adsfasdf";
+
+        });
+        
+        function createTable(data) {
+            for (let i = 0; i < 10; i ++) {
+                let song = data["setlist"][i];
+                $('body').append('<h2>' + song['title'] + '</h2>');    
+                $('body').append('<h3>Artist: ' + song['artist'] + '</h3>');    
+                $('body').append('<h3>Genre: ' + song[genres].toString() + '</h3>');    
+                $('body').append('<h3>Released: ' + song['release-year'] + '</h3>');    
+            }
+        }
+
+        
+
 
         /*         var reqObj = new XMLHttpRequest();
                 if (! reqObj) {
