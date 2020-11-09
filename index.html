@@ -24,7 +24,7 @@
         function createTable(data) {
             for (let i = 0; i < 10; i ++) {
                 let song = data["setlist"][i];
-                $('body').append('<div id="song' + i + '" class="songs"></div>')
+                $('body').append('<div id="song' + i + '" class="songs" style="text-align: center;"></div>')
                 $('#song' + i).append('<p style="font-weight:bold;">' + song['title'] + '</p>');    
                 $('#song' + i).append('<p>Artist: ' + song['artist'] + '</p>');    
                 $('#song' + i).append('<p>Genre: ' + song['genres'].toString() + '</p>');    
