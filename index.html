@@ -24,10 +24,11 @@
         function createTable(data) {
             for (let i = 0; i < 10; i ++) {
                 let song = data["setlist"][i];
-                $('body').append('<h2>' + song['title'] + '</h2>');    
-                $('body').append('<h3>Artist: ' + song['artist'] + '</h3>');    
-                $('body').append('<h3>Genre: ' + song['genres'].toString() + '</h3>');    
-                $('body').append('<h3>Released: ' + song['release-year'] + '</h3>');    
+                $('body').append('<div id="song' + i + '" class="songs"></div>')
+                $('song' + i).append('<h2>' + song['title'] + '</h2>');    
+                $('song' + i).append('<h3>Artist: ' + song['artist'] + '</h3>');    
+                $('song' + i).append('<h3>Genre: ' + song['genres'].toString() + '</h3>');    
+                $('song' + i).append('<h3>Released: ' + song['release-year'] + '</h3>');    
             }
         }
 
