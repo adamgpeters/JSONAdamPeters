@@ -1,0 +1,65 @@
+{   
+    "band-name": "The Miller Hall Band",
+    "setlist": [
+        {
+            "title": "Rude",
+            "artist": "MAGIC!",
+            "genres": ["Pop"],
+            "release-year": 2014
+        },
+        {
+            "title": "Better Together",
+            "artist": "Jack Johnson",
+            "genres": ["Rock", "Alternative"],
+            "release-year": 2005
+        },
+        {
+            "title": "Royals",
+            "artist": "Lorde",
+            "genres": ["Pop"],
+            "release-year": 2013
+        },
+        {
+            "title": "Off the Lawn",
+            "artist": "The Brook and The Bluff",
+            "genres": ["Pop"],
+            "release-year": 2019
+        },
+        {
+            "title": "False Confidence",
+            "artist": "Noah Kahan",
+            "genres": ["Alternative"],
+            "release-year": 2019
+        },
+        {
+            "title": "Electric Love",
+            "artist": "BORNS",
+            "genres": ["Alternative"],
+            "release-year": 2015
+        },
+        {
+            "title": "Secrets",
+            "artist": "OneRepublic",
+            "genres": ["Pop"],
+            "release-year": 2009
+        },
+        {
+            "title": "The Real",
+            "artist": "Busty and the Bass",
+            "genres": ["Funk", "Alternative"],
+            "release-year": 2015
+        },
+        {
+            "title": "Halfway Up",
+            "artist": "The Brook and The Bluff",
+            "genres": ["Pop"],
+            "release-year": 2019
+        },
+        {
+            "title": "Apollo",
+            "artist": "St. Paul And The Broken Bones",
+            "genres": ["Funk"],
+            "release-year": 2018
+        }
+    ]
+}
