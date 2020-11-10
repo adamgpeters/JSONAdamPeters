@@ -92,25 +92,21 @@
         </div>
     </div>
     <script>
-        $(document).ready(function () {
-            $.ajaxSetup({ cache: false });
-        });
-    </script>
+
+</script>
     <script>
         $( "#genre-selector" ).change(function() {
             $('#table').remove();
-            $.get("coverband.json",
-            function (data) {
-                if ($("#genre-selector").val() == "Default")
-                    createTable(data);
-                else
-                    createTable(data, $("#genre-selector").val());    
-            });
+            if ($("#genre-selector").val() == "Default")
+                createTable(band);
+            else
+                createTable(band, $("#genre-selector").val());    
         });
     </script>
 <script>
         $.get("coverband.json",
             function (data) {
+                var band = data;
                 createTable(data);
             });
             function createTable(data, genres=["Pop", "Funk", "Alternative", "Rock"]) {
