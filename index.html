@@ -102,7 +102,7 @@
             if ($("#genre-selector").val() == "Default")
                 createTable(band);
             else
-                createTable(band, $("#genre-selector").val());    
+                createTable(band, [$("#genre-selector").val()]);    
         });
 
         $.get("coverband.json",
