@@ -89,6 +89,8 @@
                 <option value="Alternative">Alternative</option>
                 <option value="Funk">Funk</option>
             </select>
+        </br>
+        <button id="submit">Submit</button>
         </div>
     </div>
     <script>
@@ -97,7 +99,7 @@
     <script>
     </script>
 <script>
-        $( "#genre-selector" ).change(function() {
+        $('#submit').click(function() {
             $('#table').remove();
             if ($("#genre-selector").val() == "Default")
                 createTable(band);
