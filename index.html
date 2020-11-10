@@ -95,6 +95,8 @@
 
 </script>
     <script>
+    </script>
+<script>
         $( "#genre-selector" ).change(function() {
             $('#table').remove();
             if ($("#genre-selector").val() == "Default")
@@ -102,11 +104,10 @@
             else
                 createTable(band, $("#genre-selector").val());    
         });
-    </script>
-<script>
+
         $.get("coverband.json",
             function (data) {
-                var band = data;
+                band = data;
                 createTable(data);
             });
             function createTable(data, genres=["Pop", "Funk", "Alternative", "Rock"]) {
