@@ -91,7 +91,11 @@
             </select>
         </div>
     </div>
-
+    <script>
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: false });
+        });
+    </script>
     <script>
         $( "#genre-selector" ).change(function() {
             $('#table').remove();
